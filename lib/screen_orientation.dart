@@ -11,7 +11,7 @@ portraitMode(height,width){
           decoration: BoxDecoration(
             image: const DecorationImage(
                 image: NetworkImage("https://media.licdn.com/dms/image/D5603AQGwbHLG5Eobdg/profile-displayphoto-shrink_200_200/0/1681552491981?e=1695254400&v=beta&t=MFD8fJW_yzn08r-q9rWYRZ27M2St40t4knESj9uDMWU"),
-                fit: BoxFit.cover
+                fit: BoxFit.fill
             ),
             borderRadius: BorderRadius.circular(200),
           ),
@@ -40,7 +40,6 @@ portraitMode(height,width){
       Expanded(
         flex: 3,
         child: SizedBox(
-          //  alignment: AlignmentDirectional.bottomCenter,
           height: height,
           width: width,
           child: GridView.count(
@@ -149,7 +148,7 @@ landscapeMode(height,width){
           decoration: BoxDecoration(
             image:  const DecorationImage(
                 image: NetworkImage("https://media.licdn.com/dms/image/D5603AQGwbHLG5Eobdg/profile-displayphoto-shrink_200_200/0/1681552491981?e=1695254400&v=beta&t=MFD8fJW_yzn08r-q9rWYRZ27M2St40t4knESj9uDMWU"),
-                fit: BoxFit.cover
+                fit: BoxFit.fill
             ),
             borderRadius: BorderRadius.circular(200),
           ),
